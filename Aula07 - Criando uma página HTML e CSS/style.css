@@ -42,7 +42,7 @@ main {
 }
 
 .receitas-container img {
-    width: 200px;
+    width: 240px;
     height: 200px;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.205);
@@ -51,6 +51,10 @@ main {
 .receita-filho {
     display: inline-block;
     margin: 10px;
+}
+
+.receita-filho:hover{
+    transform: scale(1.05);
 }
 
 main > section > div > a {
