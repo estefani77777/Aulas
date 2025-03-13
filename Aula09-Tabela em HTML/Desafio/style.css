@@ -1,0 +1,12 @@
+table{
+    width: 60vw;
+    border-collapse: collapse;
+}
+tr, td{
+    border: 1px solid rgb(236, 224, 224);
+    text-align: center;
+    padding: 5px;
+}
+th{
+    background-color: rgb(255, 255, 255);
+}
