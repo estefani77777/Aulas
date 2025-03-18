@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+
+    <h1>Exemplos Formulario</h1>
+
+    <p>
+
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" placeholder="Digite o seu Nome:" 
+    required >
+    </p>
+<p>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email"required autocomplete="on">
+
+    </p>
+    <label for="data">Data:</label>
+    <input type="data" id="data"required>
+
+    <p>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha"required>
+   
+    <p>
+
+    <label for="number">Celular:</label>
+    <input type="number" id="number"required>
+
+    </p>
+
+    <p> 
+    <label for="Mensagem">Reclamação:</label>
+    <textarea name="mensagem" id="mensagem" cols="50" rows="1" maxlength="100 "></textarea>
+    <p>Número máximo de 50 caracteres </p>
+   </p> 
+   <p>
+    <label for="Estados">Estados:</label>
+    <select name="Estados" id="estados"> 
+    <option value="sp">São Paulo</option>
+    <option value="rj">Rio de Janeiro</option>
+    <option value="mg">Minas Gerais</option>
+    <option value="es">Espirito Santos</option>
+   </select>
+
+   <p>
+    <label for="esportes">Esportes Favoritos</label><br>
+    <input type="checkbox" name="esportes"value="futebol">futebol<br>
+    <input type="checkbox" name="esportes"value="volei">volei<br>
+    <input type="checkbox" name="esportes"value="basquete">Basquete<br>
+    <input type="checkbox" name="esportes"value="natacao">Natação<br>
+   </p>
+
+   <p>
+    <label>Curso</label><br>
+    <input type="radio" name="Curso" value="ADS">ADS<br>
+    <input type="radio"name="Curso" value="EngSoft"> Engenhaia de Software<br>
+    <input type="radio"name="Curso" value="cienComp">Ciencia da Computação<br>
+    <input type="radio"name="Curso" value="Sistenf"> Sistema da Informação<br>
+   </p>
+   
+    <p>
+        <button type ="submit">Enviar</button>
+        <button type ="reset">Lmpar</button>
+    </p>
+
+    
+</form>
+</body>
+</html>
