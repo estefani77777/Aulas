@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Maior ou Menor de idade</title>
+</head>
+<body>
+  <h2>Desafio 2: Maior ou Menor de idade</h2>
+  <input type="number" id="idade" placeholder="Digite um número">
+  <button onclick="verificarIdade()">Verificar</button>
+  <p id="resultado"></p>
+ 
+  <script>
+    function verificarIdade() {
+      const valor = document.getElementById("idade").value;
+      const resultado = document.getElementById("resultado");
+ 
+      if (valor === "") {
+        resultado.textContent = "Por favor, digite sua idade:";
+        return;
+      }
+ 
+      const idade = parseInt(valor);
+      if (idade >=18) {
+        resultado.textContent = "Voce é Maior de idade.";
+      } else {
+        resultado.textContent = "Voce é Menor de idade.";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Par ou Ímpar</title>
+</head>
+<body>
+  <h2>Desafio 1: Par ou Ímpar</h2>
+  <input type="number" id="numero" placeholder="Digite um número">
+  <button onclick="verificarParOuImpar()">Verificar</button>
+  <p id="resultado"></p>
+ 
+  <script>
+    function verificarParOuImpar() {
+      const valor = document.getElementById("numero").value;
+      const resultado = document.getElementById("resultado");
+ 
+      if (valor === "") {
+        resultado.textContent = "Por favor, Digite um número.";
+        return;
+      }
+ 
+      const numero = parseInt(valor);
+      if (numero % 2 === 0) {
+        resultado.textContent = "O número é par.";
+      } else {
+        resultado.textContent = "O número é ímpar.";
+      }
+    }
+  </script>
+</body>
+</html>
